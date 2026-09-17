@@ -1,16 +1,65 @@
-# React + Vite
+# My React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple login interface built with React and Vite. The app provides a responsive sign-in form with email and password validation, a "Remember me" option, and a confirmation message after submission.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Email and password inputs with required-field validation
+- Remember-me checkbox
+- Forgot-password link placeholder
+- Client-side sign-in confirmation
+- Responsive styling with custom CSS
 
-## React Compiler
+> This is currently a front-end demonstration. It does not authenticate users or connect to a backend service.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started
 
-## Expanding the Oxlint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- Node.js 18 or newer
+- npm
+
+### Installation
+
+Clone the repository, move into the project directory, and install dependencies:
+
+```bash
+npm install
+```
+
+### Development
+
+Start the local development server:
+
+```bash
+npm run dev
+```
+
+Vite will print the local URL in the terminal, usually `http://localhost:5173`.
+
+## Available Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite development server |
+| `npm run build` | Create a production build |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Check the code with Oxlint |
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   └── LoginPage.jsx  # Login form and submission state
+├── App.jsx            # Application entry component
+├── App.css            # Login page styles
+├── index.css          # Global styles
+└── main.jsx           # React and Vite bootstrap
+```
+
+## Built With
+
+- [React](https://react.dev/)
+- [Vite](https://vite.dev/)
+- [Oxlint](https://oxc.rs/docs/guide/usage/linter)
